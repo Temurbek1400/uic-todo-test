@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/node" },
+    { "src": "pages/**/*.js", "use": "@vercel/next" }
+  ],
+  "env": {
+    "DATABASE_URL": "mongodb+srv://temurbekunical:OWzt55opsH9Nuf7P@cluster0.mfoxx9k.mongodb.net/uic-todo-test?retryWrites=true&w=majority&appName=Cluster0"
+  }
+}
