@@ -2,11 +2,11 @@ import { PrismaClient } from "@prisma/client";
 
 import AddTodo from "@/components/shared/AddTodo";
 
-import { PageProps } from "@/.next/types/app/page";
 import PushRoute from "@/components/shared/PushRoute";
 import Todo from "@/components/shared/Todo";
 import { projectType } from "@/types/schema";
 import ProjectTitle from "@/components/shared/ProjectTitle";
+import { PageProps } from "@/.next/types/app/page";
 
 const prisma = new PrismaClient();
 async function getData(props: PageProps) {
